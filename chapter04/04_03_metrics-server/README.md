@@ -13,7 +13,7 @@ $ kubectl apply -f conponents.yaml
 >> metrics-server
 ```
 
-2. metrics-server insstructions
+2. metrics-server instructions
 ```
 $ kubectl top node/pod
 > $ kubectl top node, kubectl top pod -n kube-system (15s 마다 갱신)
