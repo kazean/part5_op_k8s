@@ -5,7 +5,7 @@
 ```
 Status > Rule 다양한 Rule이 등록되어있음
 ls manifest/*prometheusRule*
-$ kubectl get prometheusRule -n monitoring
+$ kubectl get prometheusrules -n monitoring
 ```
 
 ## AlertManager 설정
@@ -29,7 +29,7 @@ $ vi alertmanager-secret.yaml
   - "api_url": <추가!>
 ... 추가
 "route"
-  "routes"
+  "routers"
 $ kubectl apply -f ~
 ```
 > $ kubectl get secret -n monitoring
